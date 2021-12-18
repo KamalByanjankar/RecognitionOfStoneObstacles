@@ -2,8 +2,9 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score, confusion_matrix
 import seaborn as sns
 import matplotlib.pyplot as plt 
+import numpy as np
 
-def create_confusion_matrix(y_test, result):
+def create_confusion_matrix(y_test, result, labels, title):
     cm = confusion_matrix(y_test, result)
         
     sum = np.sum(cm)
