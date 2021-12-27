@@ -3,8 +3,8 @@ import pandas as pd
 from scipy import signal
 
 NOISE_SIZE = 4000
-ECHO_SIZE = 2600
-ECHO_SIZE_LEFT = 1300
+ECHO_SIZE = 4096
+ECHO_SIZE_LEFT = 1700
 WINDOW_SIZE = 12384
 THRESHOLD = 0.0003
 
