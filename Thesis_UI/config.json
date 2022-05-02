@@ -1,0 +1,48 @@
+{
+    "data": "data",
+    "echo": "data/echos",
+    "feature": "data/features",
+    "model": "data/models",
+    "cnn": "data/models/CNN",
+    "mlp": "data/models/mlp",
+    "low": 50000,
+    "high": 30000,
+    "windowSize": 12384,
+    "choppedWindow": 13000,
+    "order": 5,
+    "raw_data_header": 1,
+    "feature_header": 4,
+    "label": 2,
+    "2output": ["COBBLESTONE", "STEPSTONE"],
+    "3output": ["BIGCOBBLESTONE", "SMALLCOBBLESTONE", "STEPSTONE"],
+    "output": {
+        "cobbleStep": ["COBBLESTONE", "STEPSTONE"],
+        "cobbleRubber": ["COBBLESTONE", "RUBBERCURB"]
+    },
+    "options": {
+        "1.953MHz": {
+            "value": 1953000.0,
+            "echo_size": 4096,
+            "noise_size": 1500,
+            "variance_threshold": 0.0003,
+            "echo_size_left": 1900,
+            "MLP": {
+                "solver": "adam",
+                "activation": "relu",
+                "hidden_layer_sizes": [23]
+            },
+            "CNN": {
+                "epochs": 10,
+                "batch_size": 10,
+                "kernel_size": 3,
+                "input_shape": 6,
+                "hidden_layer": 64,
+                "max_pool_size": 3,
+                "data_size_start": 4,
+                "data_size_end": 40,
+                "1st_activation": "relu",
+                "2nd_activation": "softmax"
+            }
+        }
+    }
+}
