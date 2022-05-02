@@ -25,6 +25,6 @@ Rolling window is used to identify the exact echo signal that we require for fur
 The echo signals are time domain data, which are converted into frequency domain data using FFT. The frequency range of 30 KHz to 50 KHz is applied in FFT for conversion process, which provides features and are saved in a separate file with .csv extension. 
 
 # Machine Learning
-The extracted features using FFT is used to train Machine Learning models. Before training the ML models, the data is splitted using train_test_split library imported from sklearn. 
+The extracted features using FFT is used to train Machine Learning models. Before training the ML models, the data is splitted using train_test_split library imported from sklearn. The training and testing data are normalized and used to train and test the machine learning models and classsification of objects is done. The accuracy of the models are also compared using confusion matrix.
 
 
